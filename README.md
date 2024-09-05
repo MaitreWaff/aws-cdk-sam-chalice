@@ -2,11 +2,11 @@
 
 This project shows how AWS CDK, AWS SAM and AWS Chalice can be used
 together to deliver a service using CDK for building the broader service
-infrastructure, Chalice as developer-friendly Python serverless 
+infrastructure, Chalice as developer-friendly Python serverless
 microframework and SAM as integration point between the two.
 
-The service is based on Amazon API Gateway and AWS Lambda. 
-The web API provides basic CRUD operations for managing users in a 
+The service is based on Amazon API Gateway and AWS Lambda.
+The web API provides basic CRUD operations for managing users in a
 DynamoDB table.
 
 ### Setting up development environment
@@ -19,7 +19,7 @@ for additional details and prerequisites
 npm install -g aws-cdk
 
 # Clone the code
-git clone https://github.com/alexpulver/aws-cdk-sam-chalice
+git clone https://github.com/MaitreWaff/aws-cdk-sam-chalice.git
 cd aws-cdk-sam-chalice
 
 # Create Python virtual environment and install the dependencies
@@ -51,6 +51,7 @@ WebApiDev.EndpointURL = https://letbml5594.execute-api.eu-west-1.amazonaws.com/v
 
 **Do not forget to delete the stack once done with testing to avoid unexpected
 charges:**
+
 ```bash
 cdk destroy WebApiDev
 ```
